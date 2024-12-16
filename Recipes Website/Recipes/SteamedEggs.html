@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<title>Steamed Eggs</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+  
+<body>
+  <header>
+    <div id="headercontainer"><!-- Header: Nav Bar and Logo --></div>
+    </header>
+
+  <main> <!-- Using this to have a different style than heading -->
+ 
+     
+    
+   <h2>Steamed Eggs</h2>
+   <img src="/pics/steamedeggs.jpg" alt="Description of the image" width="500px">
+
+   <div class="ingredients">
+     <h3> Ingredients</h3>
+     <ul>
+       <li>3 eggs</li>
+       <li>Water</li>
+       <li>salt (to taste)</li>
+       <li>1 teaspoon sesame oil</li>
+       <li>Chopped scallion</li>
+     </ul>
+   </div>
+
+   <ol>
+     <li>Crack 3 eggs in a liquid measuring cup and note the volume. Pour the eggs into a large bowl, add salt, and beat for at least 1 minute. Now measure out water at the same volume as the eggs, and add it to the bowl. Do the same with the broth. Whisk in the sesame oil, and make sure everything's well combined.</li>
+     <li>Pour the egg mixture through a fine-meshed strainer into a heatproof dish (a pyrex pie plate works well) or divide amongst 4 ramekins. </li>
+     <li>Boil the water in your steamer. Place the dish of eggs in the steamer, cover, and steam over high heat for 3 minutes. After 3 minutes have elapsed, shut off the heat, but keep the steamer covered. Let stand for 14 minutes with the lid firmly covered. Remove from the steamer, sprinkle with scallions, and serve.</li>
+  </ol>
+
+  <div class="comment-container">
+  <h2>Here's what people thought about it:</h2>
+  </div>
+<!-- 5-star system taken form https://dev.to/vikas2426/5-star-rating-component-a-step-by-step-guide-37bk-->
+<div class="comment-form">
+    <h3>Did you try this recipe? Tell how it went!</h3>
+    <form id="commentForm">
+      Rate your experience:
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">&#9733;</label>
+          <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">&#9733;</label>
+          <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">&#9733;</label>
+          <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">&#9733;</label>
+          <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">&#9733;</label>
+        </div>
+      <div class="username">
+            <label for="username">Your name: </label><br>
+            <input type="text" id="username" name="username" required></br>
+        </div>
+        <div class="comment">
+            <label for="comment">Leave a review:</label><br>
+            <textarea id="comment" name="comment" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</div>
+
+
+
+    </main>
+ 
+	<footer class="footer-section">
+	       <p class=center>&copy; 2024 Corporate Branding Name<br>
+Project Site for LIS – 640<br>
+Built by Me :)</p>
+	</footer>
+
+	</body>
+  <script type="text/javascript" src="/comments.js" defer></script>
+  <script type="text/javascript" src="/script.js" defer></script>
+
+</html>

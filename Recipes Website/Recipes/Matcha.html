@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<title>Matcha Latte</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+  
+<body>
+  <header>
+    <div id="headercontainer"><!-- Header: Nav Bar and Logo --></div>
+    </header>
+
+  <main> <!-- Using this to have a different style than heading -->
+ 
+     
+    
+   <h2>Matcha Latte </h2>
+   <img src="/pics/matchalatte.jpg" alt="Description of the image" width="500px">
+
+   <div class="ingredients">
+     <h3> Ingredients</h3>
+     <ul>
+       <li>1 teaspoon matcha powder</li>
+       <li>¼ cup hot water</li>
+       <li>1 cup warmed and frothed milk (dairy or dairy-free)</li>
+     </ul>
+<h4>Optional</h4>
+     <ul>
+        <li>Vanilla extract, honey, maple syrup, or other sweetener to taste</li>
+     </ul>
+   </div>
+
+   <ol>
+     <li>Sift the matcha (to remove any lumps) into a mug or small bowl.</li>
+     <li>Pour the hot water into the mug and use a matcha whisk to whisk vigorously in a "W" pattern for about 30 seconds, until frothy. Alternatively, you can use an electric frother. </li>
+     <li>Fill up the mug. Add the warm and frothy milk along with any sweeteners of choice. </li>
+  </ol>
+
+  <div class="comment-container">
+  <h2>Here's what people thought about it:</h2>
+  </div>
+<!-- 5-star system taken form https://dev.to/vikas2426/5-star-rating-component-a-step-by-step-guide-37bk-->
+<div class="comment-form">
+  <h3>Did you try this recipe? Tell how it went!</h3>
+  <form id="commentForm">
+    Rate your experience:
+      <div class="rating">
+        <input type="radio" id="star5" name="rating" value="5">
+          <label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+          <label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+          <label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+          <label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+          <label for="star1">&#9733;</label>
+      </div>
+    <div class="username">
+          <label for="username">Your name: </label><br>
+          <input type="text" id="username" name="username" required></br>
+      </div>
+      <div class="comment">
+          <label for="comment">Leave a review:</label><br>
+          <textarea id="comment" name="comment" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</div>
+
+
+    </main>
+ 
+	<footer class="footer-section">
+	       <p class=center>&copy; 2024 Corporate Branding Name<br>
+Project Site for LIS – 640<br>
+Built by Me :)</p>
+	</footer>
+
+	</body>
+  <script type="text/javascript" src="/comments.js" defer></script>
+  <script type="text/javascript" src="/script.js" defer></script>
+</html>
