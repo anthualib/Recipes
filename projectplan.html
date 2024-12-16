@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<title>Welcome to Joanne's Kitchen!</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+  
+<body>
+<header>
+  <div id="headercontainer"><!-- Header: Nav Bar and Logo --></div>
+  </header>
+<!-- Header: Nav Bar and Logo -->
+
+  <main> <!-- Using this to have a different style than heading -->
+ <h2>Final JS Part 3 - Initial JS Interactivity Writeup</h2>
+    <br>It turns out using this website project as a motivator for my mom to finally write down some recipes was not as an effective as I thought! However, I will bug her about it over Thanksgiving break. I've added a recipe that I knew personally: the infamous Mabo tofu dish! It will be used for all of my placeholders until more recipes are gathered.
+The main skeleton of the website is complete. </br>
+<br>The grid format, and side by side image layouts are in place from my previous submission. I've since polished up how all the images are displayed; I learned how to overlap titles over images, and added a semi transparent background for contrast. </br>
+<br>Also, I made my first ever drop down menu: the Recipes tab! I don't quite have a concrete plan to add more than the "All" page, but the "Lunch", "Dinner" and "Dessert" pages are all there to taunt me into expanding. It sort of there to serve as a filter function of the "All" page. I could either mimic filtering by making identically laid out grid list with different items, or learn how to dynamically load items using javascript. </br>
+<br> It still has this raw edge to it that makes it clear it was made with raw code rather than a CMS. More work can be done to make it more personalize but I would like to prioiritize getting the javascript for comments and dynamic filtering hammered in first.</br>
+<br>Speaking of which, my interactive contribution is the comment section at the bottom of <a href="recipe1.html">this recipe page</a>. Following this template, I was able to create event listeners that obtain values from star ratings (radios disguised as stars), a username textbox, and a comment textbox, and outputs status code into into the comment sections. The code also validates if all three fields (rating, username, and comment) are filled, and will give an error if they are not filled. The only issue is that comments are not saved when you leave and come back. I'd like to find a solution for this.</br>
+<h2>Updates to Timeline</h2>
+<ul>
+  <li> <strong>11/24:</strong> Figure out how to retain comments after the page is refreshed. <a href="https://stackoverflow.com/questions/26381639/using-local-storage-to-allow-someone-to-comment-and-then-to-show-saved-comments ">Looks like this can be done by saving it in local storage.</a></li>
+  <li> <strong>12/1:</strong> Implement the filtering system: using javacript to load content Looks like <a href="https://www.w3schools.com/howto/howto_js_filter_lists.asp">this guide</a> uses loops to hide content based on a querey
+  <li> <strong>12/15:</strong> Recieve and implement feedback. Add more recipes. Do a final polish of CSS.</li>
+</ul>
+
+    </main>
+ 
+	<footer class="footer-section">
+	       <p>&copy; 2024 Corporate Branding Name<br>
+Project Site for LIS – 640<br>
+Built by Me :)</p>
+	</footer>
+
+	</body>
+  <script type="text/javascript" src="script.js"></script>
+</html>

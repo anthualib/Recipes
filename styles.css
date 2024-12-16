@@ -1,0 +1,379 @@
+h1 {
+  font-family: 'LazyBones';
+    font-size: 60px;
+    color: #D3D3FF;                        /* color palette chosen with https://www.figma.com/colors/lavender/ */
+    text-align: center;
+    -webkit-text-stroke-width: 1.8px;       /* font outline found in link below: */
+    -webkit-text-stroke-color: #575799;     /* https://kinsta.com/blog/css-text-outline/ */
+  }
+
+
+  h2 {
+  font-family: 'Atkinson';
+    color: black;
+      text-align: center
+  }
+  
+  h3 {
+  font-family: 'Atkinson';
+    color: black;
+      text-align: center
+  }
+  
+  body {
+    font-family: 'Atkinson';
+  font-size: 20px;
+  color: #2D2D2D;
+  text-align:center;
+  background-color: #FAFAFA;
+  }
+
+  ol, ul{
+    text-align:left; /*body text is centered by default, this excludes lists*/
+    list-style-position: outside /*I just think this looks neat*/
+  }
+  
+  main {
+    max-width: 1000px; 
+    padding: 0 20px; /* magic combination that centers content*/
+    margin: 0 auto;
+  }
+  
+  .center{
+    text-align: center}
+  
+  .logo{                      /* Creating a logo with CSS. Not sure if flexboxes are the best choice for this but it is unlikely to get messed up due to narrow-ness  */
+    display: flex;
+    flex-direction: column;  
+    align-items: center;      /* Center items vertically */
+    max-width: 300px;         /* Set your desired max-width */
+    margin: 0 auto;           /* Center the container */
+    padding: 0 0px;          /* Optional padding for responsiveness */
+  }
+  
+  .joanne{                  /*logo container for the "Joanne" part*/
+    font-size:50px;
+    align-self: flex-start;
+     margin-bottom: -55px; /* Negative value brings the next line closer, making it look cohesive */
+  }
+  
+  .kitchen{                  /*logo container for the "Kitchen" part*/
+    font-size:80px;
+    align-self: flex-start;
+    margin-top: 0px; /* Set at zero so that it is not assigned automatically */
+  }
+/*Navigation bar*/
+
+  .menubar {             /*container for nav menu*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 100%; /* Ensure full width */
+    box-sizing: border-box;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: 
+  }
+  
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu > li {
+    position: relative; /* Required for dropdown positioning */
+}
+
+.menu > li a {
+    display: block;
+    color: #9D9DCC;
+    text-decoration: none;
+    padding: 20px 20px;
+    transition: background-color 0.3s;
+}
+
+.menu > li a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Align with parent menu item */
+    left: 0;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    list-style: none;
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*structural*/
+
+  .sidebyside {               /*flexbox for general side-by-side content*/
+    display: flex;
+    width: 100%; /* Ensures full screen width */
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0; /*Magic number that keeps this flexbox centered*/
+    gap:20px;        /*gap between each column*/
+}
+
+
+.column-33 {       /* for sidebyside flex: box fills 33 percent of screen */
+    flex: 0 0 33%; /* Flex-grow: 0, Flex-shrink: 0, Width: 33% */
+     ;
+}
+
+.column-66 {       /* for sidebyside flex: box fills 66 percent of screen */
+    flex: 0 0 66%; /* Flex-grow: 0, Flex-shrink: 0, Width: 66% */
+}
+
+/*Image with text overlay*/
+
+.featuredimage {
+  position: relative;
+  display: inline-block; /* Optional: Adjust for layout */
+}
+
+.featuredimage img {
+  display: block;
+  width: 100%; /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  width: 300px;
+}
+
+.allimage {
+  position: relative;
+  display: inline-block; /* Optional: Adjust for layout */
+}
+
+.allimage img {
+  display: block;
+  width: 100%; /* Adjust width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+.text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white; /* Text color */
+  text-align: center; /* Center text horizontally */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1rem; /* Adjust font size as needed */
+}
+  
+  .button {
+    background-color: #575799;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius: 30px;
+  }
+  
+  
+  a:link { 
+    text-decoration: none;
+    color: #575799;
+    font-family: Atkinson;
+  } 
+  a:visited { 
+    text-decoration: none;
+    color: #575799;
+  } 
+  a:hover { 
+    text-decoration: none; 
+    color: #090933;
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+
+.recipe-container {               /*container for the list of recipes*/
+    display: flex;
+    flex-wrap: wrap;          /* left to right, top to bottom layout*/
+    justify-content: space-between; /* Space items evenly */
+    width: 100%;              /* Full width */
+}
+
+.grid-link {                     /*To David: This ended up being the solution to the weird spacing issue */
+    flex: 0 0 calc(25% - 15px); /* this does a calculation where each box takes up 25 percent of the screen, while allowing for 15px gaps */
+}
+
+.grid-item {
+  position: relative;
+  width: 100%;
+  padding-top: 0;          /* Removed extra padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 80%;              /* Control image size */
+  height: auto;            /* Maintain aspect ratio */
+  margin-top: 10px;        /* Optional: Space around the image */
+}
+
+.grid-item h2 {
+  color: #f0ead6;
+  margin-top: auto;
+  padding: 10px 0;        /* Optional: Space above and below the text */
+}
+  
+  /* Make it responsive (optional) */
+  @media (max-width: 768px) {
+      .column-33, .column-66 {
+          flex: 0 0 100; /* Stack columns on smaller screens */
+      }
+  }
+  
+  .image-container {
+      max-width: 100%; /* Ensures the container doesn't exceed the page width */
+      display: flex;    /* Use flexbox for centering */
+      justify-content: center; /* Center content horizontally */
+      margin: 0 auto;  /* Center the container itself */
+  }
+  
+  .image-container img {
+      max-width: 100%; /* Ensures the image fits within the container */
+      height: auto;    /* Maintains aspect ratio */
+  }
+
+  .ingredients {
+  width: 300px; /* Adjust width as needed */
+  padding: 1px 40px; /* Adjust padding as needed */
+  margin: auto; /* Center the div */
+  border: 2px solid #090933; /* Outline color and thickness */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  text-align: center; /* Center text inside the div */
+  }
+
+
+/*Comments*/
+.user-name {
+  color: #575799;
+}
+
+.user-rating {
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+.user-comment {
+}
+
+/*Leaving a comment*/
+
+.comment-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.rating {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row-reverse; /* this is the magic */
+  justify-content: center;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover ~ label { /* reason why the stars are in reverse order in the html */
+  color: orange;
+}
+
+.rating input:checked ~ label {
+  color: orange;
+}
+
+.username {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.comment {
+  margin-bottom: 20px;
+}
+
+.comment textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/*Footer stuff*/
+  .footercontainer p {
+    font-size: "8px";
+  }
+
+
+
+  @font-face{font-family:Atkinson;font-style:normal;font-weight:400;font-display:fallback;src:url('https://assets.codepen.io/13257257/Atkinson-Hyperlegible-Regular-102.ttf') format('truetype');}
+  @font-face{font-family:LazyBones;font-style:normal;font-weight:400;font-display:fallback;src:url('https://assets.codepen.io/13257257/Lazybones+EF.ttf') format('truetype');}
