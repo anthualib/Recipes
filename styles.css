@@ -1,3 +1,5 @@
+
+/*FONT AND TEXT STYLES*/
 h1 {
   font-family: 'LazyBones';
     font-size: 60px;
@@ -41,7 +43,26 @@ h1 {
   
   .center{
     text-align: center}
+
+    a:link { 
+      text-decoration: none;
+      color: #575799;
+      font-family: Atkinson;
+    } 
+    a:visited { 
+      text-decoration: none;
+      color: #575799;
+    } 
+    a:hover { 
+      text-decoration: none; 
+      color: #090933;
+    } 
+    a:active { 
+      text-decoration: none; 
+    }
   
+
+/*LOGO STYLES*/
   .logo{                      /* Creating a logo with CSS. Not sure if flexboxes are the best choice for this but it is unlikely to get messed up due to narrow-ness  */
     display: flex;
     flex-direction: column;  
@@ -62,7 +83,7 @@ h1 {
     align-self: flex-start;
     margin-top: 0px; /* Set at zero so that it is not assigned automatically */
   }
-/*Navigation bar*/
+/*NAVIGATION STYLES*/
 
   .menubar {             /*container for nav menu*/
     display: flex;
@@ -105,7 +126,7 @@ h1 {
     background-color: #575757;
 }
 
-/* Dropdown Menu */
+/* Dropdown menu */
 .dropdown-content {
     display: none; /* Hidden by default */
     position: absolute;
@@ -123,7 +144,7 @@ h1 {
 }
 
 .dropdown-content li:last-child {
-    border-bottom: none;
+    border-bottom: none; /*for stylistic reasons, I dont want a line below the last item in the list*/
 }
 
 .dropdown-content a {
@@ -141,7 +162,7 @@ h1 {
     display: block;
 }
 
-/*structural*/
+/*STRUCTURAL STYLES*/
 
   .sidebyside {               /*flexbox for general side-by-side content*/
     display: flex;
@@ -162,7 +183,7 @@ h1 {
     flex: 0 0 66%; /* Flex-grow: 0, Flex-shrink: 0, Width: 66% */
 }
 
-/*Image with text overlay*/
+/*IMAGE STYLES FOR THE RECIPE LIST*/
 
 .featuredimage {
   position: relative;
@@ -216,28 +237,11 @@ h1 {
     border-radius: 30px;
   }
   
-  
-  a:link { 
-    text-decoration: none;
-    color: #575799;
-    font-family: Atkinson;
-  } 
-  a:visited { 
-    text-decoration: none;
-    color: #575799;
-  } 
-  a:hover { 
-    text-decoration: none; 
-    color: #090933;
-  } 
-  a:active { 
-    text-decoration: none; 
-  }
+/*STYLES FOR THE RECIPE LISTS*/
 
 .recipe-container {               /*container for the list of recipes*/
     display: flex;
     flex-wrap: wrap;          /* left to right, top to bottom layout*/
-    justify-content: space-between; /* Space items evenly */
     width: 100%;              /* Full width */
 }
 
@@ -248,7 +252,7 @@ h1 {
 .grid-item {
   position: relative;
   width: 100%;
-  padding-top: 0;          /* Removed extra padding */
+  padding-top: 1;          /* Removed extra padding */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -299,7 +303,7 @@ h1 {
   }
 
 
-/*Comments*/
+/*COMMENTS STYLES*/
 .user-name {
   color: #575799;
 }
@@ -309,10 +313,6 @@ h1 {
   padding-bottom: 20px;
 }
 
-.user-comment {
-}
-
-/*Leaving a comment*/
 
 .comment-form {
   max-width: 400px;
@@ -322,7 +322,7 @@ h1 {
 .rating {
   margin-bottom: 20px;
   display: flex;
-  flex-direction: row-reverse; /* this is the magic */
+  flex-direction: row-reverse; /* reason why the stars are in reverse order in the html */
   justify-content: center;
 }
 
@@ -336,12 +336,12 @@ h1 {
 }
 
 .rating label:hover,
-.rating label:hover ~ label { /* reason why the stars are in reverse order in the html */
+.rating label:hover ~ label {  /* make those stars glow! */
   color: orange;
 }
 
-.rating input:checked ~ label {
-  color: orange;
+.rating input:checked ~ label { /* make those stars glow... ~permanently~ */
+  color: orange; 
 }
 
 .username {
@@ -360,7 +360,7 @@ h1 {
 }
 
 .submit-btn {
-  background-color: #007bff;
+  background-color: #575799;
   color: #fff;
   padding: 10px 20px;
   border: none;
